@@ -11,7 +11,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light py-0 navbar-expand-md">
 		<div class="container-fluid">
 			
-			<a class="navbar-brand" href="../index.html" role="button" style="background-color: #07b08c; color: white; padding: 10px; font-family: cursive; font-weight: bold;">Latitude</a>
+			<a class="navbar-brand" href="../index.html" role="button" style="color: white;">Latitude</a>
 			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
 				<span class="navbar-toggler-icon"></span>
@@ -55,23 +55,36 @@
 					<p class="card-text">
 						<hr>
 						<img src="../Resources/assets/images/Fig4.png" style="max-width: 100%;">
-						As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+						Wind speed seems to be unaffected by latitude. One notable feature present in this chart is that there seme to be a few cities that experienced high-speed winds higher up in latitude (about 50-80 degrees latitude).		
 					</p>
 				</div>
 			</div>
 
 			<div class="w-0"></div>
 
-			<div class="col-auto card" id="right-card">
-				<div class="card-body">
-					<h4 class="card-title">Visualizations</h4>
-					<p class="card-text">
+			<div class="col-auto" id="right-card">
+				<div class="row justify-content-center" style="padding: 20px;">
+					<div class="col-12">
+						<h4>Visualizations</h4>
 						<hr>
-						<a href="vis-temp.html"><img src="../Resources/assets/images/Fig1.png" align="center" width="150px"></a>
-						<a href="vis-hum.html"><img src="../Resources/assets/images/Fig2.png" align="center" width="150px"></a>
-						<a href="vis-cloud.html"><img src="../Resources/assets/images/Fig3.png" align="center" width="150px"></a>
-						<a href="#"><img src="../Resources/assets/images/Fig4.png" align="center" width="150px" style="border: 2px solid rgb(57, 195, 241);"></a>
-					</p>
+						<div class="row">
+							<div class="col-auto" id="vis">
+								<a href="vis-temp.html"><img src="../Resources/assets/images/Fig1.png" align="center" style="max-width: 100%;"></a>
+							</div>
+								
+							<div class="col-auto" id="vis">
+								<a href="vis-hum.html"><img src="../Resources/assets/images/Fig2.png" align="center" style="max-width: 100%;"></a>
+							</div>
+
+							<div class="col-auto" id="vis">
+								<a href="vis-cloud.html"><img src="../Resources/assets/images/Fig3.png" align="center" style="max-width: 100%;"></a>
+							</div>
+
+							<div class="col-auto" id="vis">
+								<a href="#"><img src="../Resources/assets/images/Fig4.png" align="center" style="max-width: 100%;" class="current"></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

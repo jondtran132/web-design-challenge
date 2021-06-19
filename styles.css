@@ -10,10 +10,6 @@ h5 {
     color: #0bcca2;
 }
 
-img#comp {
-    max-width: 100%;
-}
-
 .navbar {
     background-color: white;
 }
@@ -26,7 +22,6 @@ img#comp {
 
 .navbar-brand {
     background-color: #07b08c;
-    color: white;
     padding: 10px;
     font-family: cursive;
     font-weight: bold;
@@ -38,21 +33,25 @@ img#comp {
     padding: 30px;
 }
 
-.col-auto#left-card {
+#left-card {
     background-color: white;
     margin: 15px;
     width: 50%;
 }
 
-.col-auto#right-card {
+#right-card {
     background-color: white;
     margin: 15px;
     width: 30%;
     height: 100%;
 }
 
-.col-auto#comp {
+#comp, #vis {
     width: 50%;
+}
+
+.current {
+    border: 2px solid rgb(57, 195, 241);
 }
 
 @media (max-width: 767px) {
@@ -69,13 +68,17 @@ img#comp {
         margin: 0;
     }
 
-    .col-auto#left-card, .col-auto#right-card {
+    #left-card, #right-card {
         margin: 0;
         width: 100%;
         border: 0;
     }
 
-    .col-auto#comp {
+    #vis {
+        width: 25%;
+    }
+
+    #comp {
         width: 100%;
     }
 }
